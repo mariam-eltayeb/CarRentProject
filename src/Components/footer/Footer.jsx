@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Divider, ListItemText, Stack, Typography } from "@mui/material";
-import { ListItemButton } from "@mui/joy";
+import { ListItemButton } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -59,7 +59,7 @@ const Footer = () => {
                 </Stack>
               </ListItemText>
             </Grid>
-            <Grid xs={6} lg={3} sx={{margin:"0 !important"}}>
+            <Grid xs={6} lg={3} sx={{ margin: "0 !important" }}>
               <ListItemText>
                 <Stack
                   id="category-b"
@@ -83,7 +83,7 @@ const Footer = () => {
                 >
                   <b>Socials</b>
                 </Stack>
-                <Stack component="ul" sx={{ alignItems: "center" }}>
+                <Stack component="ul" sx={{ alignItems: "left" }}>
                   <ListItemButton sx={mystyle}>Discord</ListItemButton>
                   <ListItemButton sx={mystyle}>Instagram</ListItemButton>
                   <ListItemButton sx={mystyle}>Twitter</ListItemButton>

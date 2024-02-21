@@ -1,32 +1,27 @@
 import * as React from "react";
-import List from "@mui/joy/List";
-import ListItem from "@mui/joy/ListItem";
-import ListItemDecorator, {
-  listItemDecoratorClasses,
-} from "@mui/joy/ListItemDecorator";
-import ListItemContent from "@mui/joy/ListItemContent";
-import ListItemButton from "@mui/joy/ListItemButton";
-import Typography from "@mui/joy/Typography";
-import Box from "@mui/joy/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+
+import ListItemText from "@mui/material/ListItemText";
+import ListItemButton from "@mui/material/ListItemButton";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 import { Checkbox } from "@mui/material";
-import { Slider } from "@mui/joy";
+import { Slider } from "@mui/material";
 
 const Asidebar = () => {
- 
   return (
     <Box sx={{ py: 2, pr: 2, width: 320 }}>
       <List
         aria-label="Sidebar"
         sx={{
           "--ListItem-paddingLeft": "0px",
+
           "--ListItemDecorator-size": "64px",
           "--ListItem-minHeight": "0px",
           "--List-nestedInsetStart": "13px",
-          [`& .${listItemDecoratorClasses.root}`]: {
-            justifyContent: "flex-end",
-            pr: "18px",
-          },
+
           '& [role="button"]': {
             borderRadius: "0 20px 20px 0",
           },
@@ -34,50 +29,48 @@ const Asidebar = () => {
         }}
       >
         <Typography variant="p" sx={{ marginBottom: "10px" }}>
-          Types
+          Type
         </Typography>
-        <ListItem>
+        <ListItem sx={{ display: "contents" }}>
           <ListItemButton>
             <Checkbox label="Solid" variant="solid" defaultChecked />
-            <ListItemContent>Sport</ListItemContent>
+            <ListItemText>Sport</ListItemText>
             <Typography level="body-sm">(10)</Typography>
           </ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem sx={{ display: "contents" }}>
           <ListItemButton>
             <Checkbox label="Solid" variant="solid" />
-            <ListItemContent>SUV</ListItemContent>
+            <ListItemText>SUV</ListItemText>
             <Typography level="body-sm">(12)</Typography>
           </ListItemButton>
         </ListItem>
-        <ListItem nested>
+        <ListItem nested sx={{ display: "contents" }}>
           <ListItemButton>
-            <Checkbox label="Solid" variant="solid"  />
-            <ListItemContent>MPV</ListItemContent>
+            <Checkbox label="Solid" variant="solid" />
+            <ListItemText>MVP</ListItemText>
             <Typography level="body-sm">(16)</Typography>
           </ListItemButton>
 
-          <ListItem>
+          <ListItem sx={{ display: "contents" }}>
             <ListItemButton>
-              <Checkbox label="Solid" variant="solid" defaultChecked />
-              <ListItemContent>Sedan</ListItemContent>
+              <Checkbox label="Solid" variant="solid" />
+              <ListItemText>Seden</ListItemText>
               <Typography level="body-sm">(20)</Typography>
             </ListItemButton>
           </ListItem>
-          <ListItem>
+          <ListItem sx={{ display: "contents" }}>
             <ListItemButton>
-              <Checkbox label="Solid" variant="solid"  />
-              <ListItemContent>Coupe</ListItemContent>
-              <Typography level="body-sm">(14)</Typography>
+              <Checkbox label="Solid" variant="solid" />
+              <ListItemText>Coupe</ListItemText>
+              <Typography level="body-sm">(20)</Typography>
             </ListItemButton>
           </ListItem>
-          <ListItem>
+          <ListItem sx={{ display: "contents" }}>
             <ListItemButton>
-              <Checkbox label="Solid" variant="solid"  />
-              <ListItemContent>Hatchback</ListItemContent>
-              <Typography level="body-sm" sx={{ marginLeft: "50px" }}>
-                (14)
-              </Typography>
+              <Checkbox label="Solid" variant="solid" />
+              <ListItemText>Hatchback</ListItemText>
+              <Typography level="body-sm">(20)</Typography>
             </ListItemButton>
           </ListItem>
         </ListItem>
@@ -91,10 +84,7 @@ const Asidebar = () => {
           "--ListItemDecorator-size": "64px",
           "--ListItem-minHeight": "0px",
           "--List-nestedInsetStart": "13px",
-          [`& .${listItemDecoratorClasses.root}`]: {
-            justifyContent: "flex-end",
-            pr: "18px",
-          },
+
           '& [role="button"]': {
             borderRadius: "0 20px 20px 0",
           },
@@ -107,28 +97,28 @@ const Asidebar = () => {
         <ListItem sx={{ display: "contents" }}>
           <ListItemButton>
             <Checkbox label="Solid" variant="solid" defaultChecked />
-            <ListItemContent>2 Person</ListItemContent>
+            <ListItemText>2 Person</ListItemText>
             <Typography level="body-sm">(10)</Typography>
           </ListItemButton>
         </ListItem>
         <ListItem sx={{ display: "contents" }}>
           <ListItemButton>
             <Checkbox label="Solid" variant="solid" />
-            <ListItemContent>4 Person</ListItemContent>
+            <ListItemText>4 Person</ListItemText>
             <Typography level="body-sm">(12)</Typography>
           </ListItemButton>
         </ListItem>
         <ListItem nested sx={{ display: "contents" }}>
           <ListItemButton>
-            <Checkbox label="Solid" variant="solid"  />
-            <ListItemContent>6 Person</ListItemContent>
+            <Checkbox label="Solid" variant="solid" />
+            <ListItemText>6 Person</ListItemText>
             <Typography level="body-sm">(16)</Typography>
           </ListItemButton>
 
           <ListItem sx={{ display: "contents" }}>
             <ListItemButton>
-              <Checkbox label="Solid" variant="solid"  />
-              <ListItemContent>8 or More</ListItemContent>
+              <Checkbox label="Solid" variant="solid" />
+              <ListItemText>8 or More</ListItemText>
               <Typography level="body-sm">(20)</Typography>
             </ListItemButton>
           </ListItem>
@@ -139,13 +129,9 @@ const Asidebar = () => {
         sx={{
           "--ListItem-paddingLeft": "0px",
 
-          "--ListItemDecorator-size": "64px",
           "--ListItem-minHeight": "0px",
           "--List-nestedInsetStart": "13px",
-          [`& .${listItemDecoratorClasses.root}`]: {
-            justifyContent: "flex-end",
-            pr: "18px",
-          },
+
           '& [role="button"]': {
             borderRadius: "0 20px 20px 0",
           },
@@ -156,8 +142,8 @@ const Asidebar = () => {
           Price
         </Typography>
         <Slider value={50}></Slider>
-        <Typography variant="p" sx={{fontSize:"15px"}}>
-        Max. $100.00
+        <Typography variant="p" sx={{ fontSize: "15px" }}>
+          Max. $100.00
         </Typography>
       </List>
     </Box>
